@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.app-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  height: 30em;
+  border: 2px solid black;
+  text-align: center;
+  flex-direction: column;
+  max-width: 30em;
+  padding: 3em;
+  
+}
+.app-box h1,
+h2 {
+  line-height: 0.9;
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-bottom: .5em;
+}
+h2 {
+  font-size: 5rem;
+}
+.app-box::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background-image: url(./train-station.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+#increment-btn, #save-btn{
+  padding: 1em 2em;
+  margin: 1em;
+  background-color: red;
+  
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+#save-btn{
+  background-color: green;
+}
+p{
+  font-size: 1.5em;
+  font-weight: 700;
+}
